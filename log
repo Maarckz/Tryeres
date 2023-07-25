@@ -1,0 +1,975 @@
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/ [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning www.wedologos.com.br [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/workspace/www.wedologos.com.br [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning www.wedologos.com.br [94m[[0m[92mOK[0m[94m][0m
+[91m                ____               [0m
+[91m    _________  /  _/___  ___  _____[0m
+[91m   / ___/ __ \ / // __ \/ _ \/ ___/[0m
+[91m  (__  ) / / // // /_/ /  __/ /    [0m
+[91m /____/_/ /_/___/ .___/\___/_/     [0m
+[91m               /_/                 [0m
+[0m
+[93m + -- --=[https://sn1persecurity.com
+[93m + -- --=[Sn1per v9.1 by @xer0dayz
+[0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m GATHERING DNS INFO [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m CHECKING FOR SUBDOMAIN HIJACKING [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+siteswdl-1587409433.sa-east-1.elb.amazonaws.com.
+
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m PINGING HOST [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+PING siteswdl-1587409433.sa-east-1.elb.amazonaws.com (54.233.184.74) 56(84) bytes of data.
+
+--- siteswdl-1587409433.sa-east-1.elb.amazonaws.com ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m RUNNING TCP PORT SCAN [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-07-18 20:19 -03
+Nmap scan report for www.wedologos.com.br (54.233.184.74)
+Host is up (0.046s latency).
+Other addresses for www.wedologos.com.br (not scanned): 54.207.74.207
+rDNS record for 54.233.184.74: ec2-54-233-184-74.sa-east-1.compute.amazonaws.com
+Not shown: 59 filtered ports, 2 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 2.40 seconds
+
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m RUNNING INTRUSIVE SCANS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m + -- --=[Port 21 closed... skipping.[0m
+[91m + -- --=[Port 22 closed... skipping.[0m
+[91m + -- --=[Port 23 closed... skipping.[0m
+[91m + -- --=[Port 25 closed... skipping.[0m
+[91m + -- --=[Port 53 closed... skipping.[0m
+[91m + -- --=[Port 67 closed... skipping.[0m
+[91m + -- --=[Port 68 closed... skipping.[0m
+[91m + -- --=[Port 69 closed... skipping.[0m
+[91m + -- --=[Port 79 closed... skipping.[0m
+[91m + -- --=[Port 110 closed... skipping.[0m
+[91m + -- --=[Port 111 closed... skipping.[0m
+[91m + -- --=[Port 123 closed... skipping.[0m
+[91m + -- --=[Port 135 closed... skipping.[0m
+[91m + -- --=[Port 137 closed... skipping.[0m
+[91m + -- --=[Port 139 closed... skipping.[0m
+[91m + -- --=[Port 161 closed... skipping.[0m
+[91m + -- --=[Port 162 closed... skipping.[0m
+[91m + -- --=[Port 264 closed... skipping.[0m
+[91m + -- --=[Port 389 closed... skipping.[0m
+[91m + -- --=[Port 445 closed... skipping.[0m
+[91m + -- --=[Port 500 closed... skipping.[0m
+[91m + -- --=[Port 512 closed... skipping.[0m
+[91m + -- --=[Port 513 closed... skipping.[0m
+[91m + -- --=[Port 514 closed... skipping.[0m
+[91m + -- --=[Port 1099 closed... skipping.[0m
+[91m + -- --=[Port 1433 closed... skipping.[0m
+[91m + -- --=[Port 2049 closed... skipping.[0m
+[91m + -- --=[Port 2181 closed... skipping.[0m
+[91m + -- --=[Port 3306 closed... skipping.[0m
+[91m + -- --=[Port 3310 closed... skipping.[0m
+[91m + -- --=[Port 3128 closed... skipping.[0m
+[91m + -- --=[Port 3389 closed... skipping.[0m
+[91m + -- --=[Port 3632 closed... skipping.[0m
+[91m + -- --=[Port 5432 closed... skipping.[0m
+[91m + -- --=[Port 5555 closed... skipping.[0m
+[91m + -- --=[Port 5800 closed... skipping.[0m
+[91m + -- --=[Port 5900 closed... skipping.[0m
+[91m + -- --=[Port 5984 closed... skipping.[0m
+[91m + -- --=[Port 6000 closed... skipping.[0m
+[91m + -- --=[Port 6667 closed... skipping.[0m
+[91m + -- --=[Port 7001 closed... skipping.[0m
+[91m + -- --=[Port 8000 closed... skipping.[0m
+[91m + -- --=[Port 8001 closed... skipping.[0m
+[91m + -- --=[Port 9495 closed... skipping.[0m
+[91m + -- --=[Port 10000 closed... skipping.[0m
+[91m + -- --=[Port 16992 closed... skipping.[0m
+[91m + -- --=[Port 27017 closed... skipping.[0m
+[91m + -- --=[Port 27018 closed... skipping.[0m
+[91m + -- --=[Port 27019 closed... skipping.[0m
+[91m + -- --=[Port 28017 closed... skipping.[0m
+[91m + -- --=[Port 49180 closed... skipping.[0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m SCANNING ALL HTTP PORTS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/workspace/www.wedologos.com.br [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning www.wedologos.com.br [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/workspace/www.wedologos.com.br [[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/workspace/www.wedologos.com.br [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning www.wedologos.com.br [94m[[0m[92mOK[0m[94m][0m
+[91m                ____               [0m
+[91m    _________  /  _/___  ___  _____[0m
+[91m   / ___/ __ \ / // __ \/ _ \/ ___/[0m
+[91m  (__  ) / / // // /_/ /  __/ /    [0m
+[91m /____/_/ /_/___/ .___/\___/_/     [0m
+[91m               /_/                 [0m
+[0m
+[93m + -- --=[https://sn1persecurity.com
+[93m + -- --=[Sn1per v9.1 by @xer0dayz
+
+
+               ;               ,           
+             ,;                 '.         
+            ;:                   :;        
+           ::                     ::       
+           ::                     ::       
+           ':                     :        
+            :.                    :        
+         ;' ::                   ::  '     
+        .'  ';                   ;'  '.    
+       ::    :;                 ;:    ::   
+       ;      :;.             ,;:     ::   
+       :;      :;:           ,;"      ::   
+       ::.      ':;  ..,.;  ;:'     ,.;:   
+        "'"...   '::,::::: ;:   .;.;""'    
+            '"""....;:::::;,;.;"""         
+        .:::.....'"':::::::'",...;::::;.   
+       ;:' '""'"";.,;:::::;.'""""""  ':;   
+      ::'         ;::;:::;::..         :;  
+     ::         ,;:::::::::::;:..       :: 
+     ;'     ,;;:;::::::::::::::;";..    ':.
+    ::     ;:"  ::::::"""'::::::  ":     ::
+     :.    ::   ::::::;  :::::::   :     ; 
+      ;    ::   :::::::  :::::::   :    ;  
+       '   ::   ::::::....:::::'  ,:   '   
+        '  ::    :::::::::::::"   ::       
+           ::     ':::::::::"'    ::       
+           ':       """""""'      ::       
+            ::                   ;:        
+            ':;                 ;:"        
+    -hrr-     ';              ,;'          
+                "'           '"            
+                  ''''[0m
+
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m RUNNING TCP PORT SCAN [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[93m + -- --=[Port 80 opened... running tests...[0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m CHECKING HTTP HEADERS AND METHODS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+HTTP/1.1 301 Moved Permanently
+Server: awselb/2.0
+Date: Tue, 18 Jul 2023 23:19:52 GMT
+Content-Type: text/html
+Content-Length: 134
+Connection: keep-alive
+Location: https://www.wedologos.com.br:443/
+
+HTTP/1.1 301 Moved Permanently
+Server: awselb/2.0
+Date: Tue, 18 Jul 2023 23:19:52 GMT
+Content-Type: text/html
+Content-Length: 134
+Connection: keep-alive
+Location: https://www.wedologos.com.br:443/
+
+HTTP/2 200 
+date: Tue, 18 Jul 2023 23:19:52 GMT
+content-type: text/html
+content-length: 838827
+cache-control: max-age=31536000
+last-modified: Mon, 26 Jun 2023 12:51:39 GMT
+accept-ranges: bytes
+etag: "5ce554f32ca8d91:0"
+server: Microsoft-IIS/10.0
+access-control-allow-origin: *
+
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m DISPLAYING META GENERATOR TAGS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m DISPLAYING COMMENTS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m DISPLAYING SITE LINKS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m CHECKING FOR WAF [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+
+                   [1;97m______
+                  [1;97m/      \
+                 [1;97m(  Woof! )
+                  [1;97m\  ____/                      [1;91m)
+                  [1;97m,,                           [1;91m) ([1;93m_
+             [1;93m.-. [1;97m-    [1;92m_______                 [1;91m( [1;93m|__|
+            [1;93m()``; [1;92m|==|_______)                [1;91m.)[1;93m|__|
+            [1;93m/ ('        [1;92m/|\                  [1;91m(  [1;93m|__|
+        [1;93m(  /  )       [1;92m / | \                  [1;91m. [1;93m|__|
+         [1;93m\(_)_))      [1;92m/  |  \                   [1;93m|__|[0m
+
+                    [1;96m~ WAFW00F : [1;94mv2.1.0 ~[1;97m
+    The Web Application Firewall Fingerprinting Toolkit
+    [0m
+[*] Checking http://www.wedologos.com.br
+[+] Generic Detection results:
+[-] No WAF detected by the generic detection
+[~] Number of requests: 7
+
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[91m GATHERING HTTP INFO [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:19)[0mx•
+[1m[34mhttp://www.wedologos.com.br:80[0m [301 Moved Permanently] [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTTPServer[0m[[1m[36mawselb/2.0[0m], [1mIP[0m[[0m[22m54.233.184.74[0m], [1mRedirectLocation[0m[[0m[22mhttps://www.wedologos.com.br:443/[0m], [1mTitle[0m[[1m[33m301 Moved Permanently[0m]
+[1m[34mhttps://www.wedologos.com.br/[0m [200 OK] [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mFrame[0m, [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mMicrosoft-IIS/10.0[0m], [1mIP[0m[[0m[22m54.207.74.207[0m], [1mMicrosoft-IIS[0m[[1m[32m10.0[0m], [1mOpen-Graph-Protocol[0m[[1m[32mwebsite[0m], [1mScript[0m[[0m[22mtext/javascript[0m], [1mTitle[0m[[1m[33mCriação de Logomarca e Identidade Visual Profissionais - WDL[0m], [1mUncommonHeaders[0m[[0m[22maccess-control-allow-origin[0m]
+
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m GATHERING WEB FINGERPRINT [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+ Google Tag Manager 
+ Vue.js 
+ IIS 10.0
+ Nuxt.js 
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m SAVING SCREENSHOTS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m RUNNING NMAP SCRIPTS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-07-18 20:20 -03
+NSE: Loaded 50 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:20
+Completed NSE at 20:20, 0.00s elapsed
+Initiating NSE at 20:20
+Completed NSE at 20:20, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 20:20
+Completed Parallel DNS resolution of 1 host. at 20:20, 0.00s elapsed
+Initiating SYN Stealth Scan at 20:20
+Scanning www.wedologos.com.br (54.233.184.74) [1 port]
+Discovered open port 80/tcp on 54.233.184.74
+Completed SYN Stealth Scan at 20:20, 0.05s elapsed (1 total ports)
+Initiating Service scan at 20:20
+Scanning 1 service on www.wedologos.com.br (54.233.184.74)
+Completed Service scan at 20:20, 13.12s elapsed (1 service on 1 host)
+NSE: Script scanning 54.233.184.74.
+Initiating NSE at 20:20
+Completed NSE at 20:20, 0.38s elapsed
+Initiating NSE at 20:20
+Completed NSE at 20:20, 0.09s elapsed
+Nmap scan report for www.wedologos.com.br (54.233.184.74)
+Host is up (0.035s latency).
+Other addresses for www.wedologos.com.br (not scanned): 54.207.74.207
+rDNS record for 54.233.184.74: ec2-54-233-184-74.sa-east-1.compute.amazonaws.com
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    awselb/2.0
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 301 Moved Permanently
+|     Server: awselb/2.0
+|     Date: Tue, 18 Jul 2023 23:20:19 GMT
+|     Content-Type: text/html
+|     Content-Length: 134
+|     Connection: close
+|     Location: https://siteswdl-1587409433.sa-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak
+|     <html>
+|     <head><title>301 Moved Permanently</title></head>
+|     <body>
+|     <center><h1>301 Moved Permanently</h1></center>
+|     </body>
+|     </html>
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 301 Moved Permanently
+|     Server: awselb/2.0
+|     Date: Tue, 18 Jul 2023 23:20:19 GMT
+|     Content-Type: text/html
+|     Content-Length: 134
+|     Connection: close
+|     Location: https://siteswdl-1587409433.sa-east-1.elb.amazonaws.com:443/
+|     <html>
+|     <head><title>301 Moved Permanently</title></head>
+|     <body>
+|     <center><h1>301 Moved Permanently</h1></center>
+|     </body>
+|     </html>
+|   RPCCheck: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Tue, 18 Jul 2023 23:20:24 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Tue, 18 Jul 2023 23:20:19 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|_    </html>
+| http-brute:   
+|_  Path "/" does not require authentication
+|_http-server-header: awselb/2.0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.80%I=7%D=7/18%Time=64B71E34%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,16A,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awse
+SF:lb/2\.0\r\nDate:\x20Tue,\x2018\x20Jul\x202023\x2023:20:19\x20GMT\r\nCon
+SF:tent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20clo
+SF:se\r\nLocation:\x20https://siteswdl-1587409433\.sa-east-1\.elb\.amazona
+SF:ws\.com:443/\r\n\r\n<html>\r\n<head><title>301\x20Moved\x20Permanently<
+SF:/title></head>\r\n<body>\r\n<center><h1>301\x20Moved\x20Permanently</h1
+SF:></center>\r\n</body>\r\n</html>\r\n")%r(HTTPOptions,16A,"HTTP/1\.1\x20
+SF:301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Tue,\
+SF:x2018\x20Jul\x202023\x2023:20:19\x20GMT\r\nContent-Type:\x20text/html\r
+SF:\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https:
+SF://siteswdl-1587409433\.sa-east-1\.elb\.amazonaws\.com:443/\r\n\r\n<html
+SF:>\r\n<head><title>301\x20Moved\x20Permanently</title></head>\r\n<body>\
+SF:r\n<center><h1>301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n
+SF:</html>\r\n")%r(RTSPRequest,7A,"<html>\r\n<head><title>400\x20Bad\x20Re
+SF:quest</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1
+SF:></center>\r\n</body>\r\n</html>\r\n")%r(X11Probe,110,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Tue,\x2018\x20
+SF:Jul\x202023\x2023:20:19\x20GMT\r\nContent-Type:\x20text/html\r\nContent
+SF:-Length:\x20122\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>4
+SF:00\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><h1>400\x20Bad
+SF:\x20Request</h1></center>\r\n</body>\r\n</html>\r\n")%r(FourOhFourReque
+SF:st,18D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2
+SF:\.0\r\nDate:\x20Tue,\x2018\x20Jul\x202023\x2023:20:19\x20GMT\r\nContent
+SF:-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r
+SF:\nLocation:\x20https://siteswdl-1587409433\.sa-east-1\.elb\.amazonaws\.
+SF:com:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n<html>\r\n<head><ti
+SF:tle>301\x20Moved\x20Permanently</title></head>\r\n<body>\r\n<center><h1
+SF:>301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n</html>\r\n")%
+SF:r(RPCCheck,110,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb
+SF:/2\.0\r\nDate:\x20Tue,\x2018\x20Jul\x202023\x2023:20:24\x20GMT\r\nConte
+SF:nt-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close
+SF:\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n
+SF:<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</body>\r\
+SF:n</html>\r\n");
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:20
+Completed NSE at 20:20, 0.00s elapsed
+Initiating NSE at 20:20
+Completed NSE at 20:20, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.01 seconds
+           Raw packets sent: 1 (44B) | Rcvd: 1 (44B)
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m RUNNING PASSIVE WEB SPIDER [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m FETCHING WAYBACK MACHINE URLS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+http://www.wedologos.com.br:80/
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,
+http://www.wedologos.com.br:80/%20ivanco
+http://www.wedologos.com.br:80/%E2%80%8E
+https://www.wedologos.com.br/.well-known/ai-plugin.json
+https://www.wedologos.com.br/.well-known/assetlinks.json
+https://www.wedologos.com.br/.well-known/dnt-policy.txt
+https://www.wedologos.com.br/.well-known/gpc.json
+https://www.wedologos.com.br/.well-known/nodeinfo
+https://www.wedologos.com.br/.well-known/openid-configuration
+https://www.wedologos.com.br/.well-known/security.txt
+https://www.wedologos.com.br/.well-known/trust.txt
+http://www.wedologos.com.br:80/2
+http://www.wedologos.com.br:80/2010
+http://www.wedologos.com.br:80/2010/abc-desing-16022011.asp
+http://www.wedologos.com.br:80/2010/ancelmo_gois_2010.asp
+https://www.wedologos.com.br/2010/anexos/
+http://www.wedologos.com.br:80/2010/anexos/%7B4C361E39-41E2-4536-ACD0-9095F43BDBB1%7D_PISistema%20e%20Equipamento%20para%20Higieniza%C3%A7%C3%A3o%20de%20Pacientes%20Acamados%20PDF[1].txt
+http://www.wedologos.com.br:80/2010/anexos/%7BE563A637-6582-466E-8DBE-10570B84BF39%7D_logo_tradicao.cdr
+http://www.wedologos.com.br:80/2010/anexos/%7BEBF386DC-E27C-4398-85B0-43591D316FE8%7D_Apresenta%C3%A7%C3%A3o_Executiva_360o_Graus.pdf
+http://www.wedologos.com.br:80/2010/anexos/%7BEBF386DC-E27C-4398-85B0-43591D316FE8%7D_Apresenta%E7%E3o_Executiva_360o_Graus.pdf
+http://www.wedologos.com.br:80/2010/como-funciona-empresa.asp
+http://www.wedologos.com.br:80/2010/como-funciona.asp
+http://www.wedologos.com.br:80/2010/confidencial.asp?
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1013
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1033
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1101
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1206
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1217
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1218
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1313
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1377
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1382
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1495
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1505
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1512
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1525
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1538
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1545
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1574
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1576
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1645
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=284
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=330
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=409
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=514
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=631
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=694
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=863
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=932
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=967
+http://www.wedologos.com.br:80/2010/confidencial_pass.asp?
+http://www.wedologos.com.br:80/2010/contato.asp
+http://www.wedologos.com.br:80/2010/depoimentos.asp
+http://www.wedologos.com.br:80/2010/diario-do-nordeste-13021011.asp
+http://www.wedologos.com.br:80/2010/duvidas-frequentes.asp
+http://www.wedologos.com.br:80/2010/editar-cadastro.asp
+http://www.wedologos.com.br:80/2010/feedback_add.asp
+http://www.wedologos.com.br:80/2010/feedback_delete.asp?
+http://www.wedologos.com.br:80/2010/formas-de-pagamento.asp
+http://www.wedologos.com.br/2010/fotos/P/%7B067411A9-7082-4475-9544-25A80649FFCC%7D_150x150.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B0A38D64D-ECD0-40B0-A999-68849600E76A%7D_OgAAABH7HOO5q5p5ri6Y7b_3cdXBG3guNsFAxfQnbvZamd3XQcNzT2TrjJlwJteb4uhEPn1NNGczhMJHdcQ1h-5HZWQAm1T1UG4oFdQ6fz93Pq6E1q7ARvMIp3ZY.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B1CDE336A-FD38-4C3F-B415-6BC8C72E86AD%7D_jonas_2008_MSN_II.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B36579E24-7FFA-4322-9DE5-8301925C03C9%7D_malufoto.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B39E70CC0-7A66-4AD9-A525-4D1E9B1AB122%7D_DSC06054.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B3B9A205E-08BD-44B4-B5FD-564CD0F4B66E%7D_ej.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B4C0152A9-C9B6-4C7E-AE5B-F878A1700C21%7D_AILE.png
+http://www.wedologos.com.br/2010/fotos/P/%7B56B996CF-C699-4B02-8C6E-242264A153C8%7D_eduardo.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B5D31D2C2-BB64-4F27-B9E4-DA800F4B420F%7D_MALA01.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B681EF308-4165-4B4E-96D7-E16E084BADD7%7D_gutto-design.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B768A2F32-762C-4BBB-B21E-776887013DE7%7D_che.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B7ACC89AA-765A-4E58-B851-29BB2A95C5BC%7D_foto_019.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B7C676C3E-ED2A-4A6F-A677-6525E601E974%7D_mitchel.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B907CF290-230D-4766-906D-1BD512B11BAF%7D_zbrands05.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7B9CD2F7E4-3663-4063-BB22-F2AC897B7EE4%7D_lia.jpg
+http://www.wedologos.com.br/2010/fotos/P/%7BAF2E5CAA-397E-471A-9C83-D9C12D9F16A5%7D_ibahia.png
+http://www.wedologos.com.br:80/2010/globo-barra-25-11-2010.asp
+http://www.wedologos.com.br/2010/img/background-destaque.jpg
+http://www.wedologos.com.br/2010/img/background-topo.jpg
+http://www.wedologos.com.br/2010/img/blog.jpg
+http://www.wedologos.com.br/2010/img/botton-pagamento-seguro.jpg
+http://www.wedologos.com.br/2010/img/botton-proximo-passo.jpg
+http://www.wedologos.com.br/2010/img/botton-redes-sociais.jpg
+http://www.wedologos.com.br/2010/img/capa-passos.jpg
+http://www.wedologos.com.br/2010/img/forma-de-pagamento.jpg
+http://www.wedologos.com.br/2010/img/fundo-logado.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B036C9A8C-8794-444E-B79B-1E7F162F24E8%7D_srio.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B1AD226E2-3C89-4BAE-8651-2A54B0FF1A33%7D_princesas6.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B2B255D46-0F22-4CF8-8125-1E79CB0C1341%7D_waf.png
+http://www.wedologos.com.br/2010/img/logos/p/%7B2B75CA3D-819D-4D97-AD65-99AC7B37F963%7D_We.do.logos%202.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B3E101F1B-A506-4C16-ADE0-4ED5986C4A85%7D_CPREV10.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B452CAAFC-8454-4D76-B833-69214E62555F%7D_logo10.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B67121D0B-0958-4CE9-9A02-2CF7CEF0AEFD%7D_drinks-v3.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B6A427481-2B2E-4D3E-ADDA-9B9DA60FD033%7D_EMAIL%20MONITORADO5.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7B6F5FBC73-B95F-4E99-ACE0-0514E30D1D37%7D_fred-studart.png
+http://www.wedologos.com.br/2010/img/logos/p/%7B959C47B0-E62E-4966-B6D0-25303CB475C1%7D_gerson-engana.png
+http://www.wedologos.com.br/2010/img/logos/p/%7BA0495D65-1013-41B4-B8C8-D9634FC724D7%7D_esporte-gol.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7BBD543ECF-E00C-4809-885C-0BF8DC50047D%7D_bonder
+http://www.wedologos.com.br/2010/img/logos/p/%7BE762A256-0552-41AF-8D5C-2424FD8FEF54%7D_Golf%203.jpg
+http://www.wedologos.com.br/2010/img/logos/p/%7BEB333D63-C72D-486D-ADFA-9D2A07D6B436%7D_embalagem-hidratante_Guigo_curva-99.jpg
+http://www.wedologos.com.br/2010/img/maneyback-gr.jpg
+http://www.wedologos.com.br/2010/img/maneyback-pq.jpg
+http://www.wedologos.com.br/2010/img/marca-we-go-logos-bottom.jpg
+http://www.wedologos.com.br/2010/img/marca-we-go-logos-topo.jpg
+http://www.wedologos.com.br/2010/img/plano-1.jpg
+http://www.wedologos.com.br/2010/img/plano-2.jpg
+http://www.wedologos.com.br/2010/img/plano-3-1.jpg
+http://www.wedologos.com.br/2010/img/plano-4-1.jpg
+http://www.wedologos.com.br/2010/img/transparent.gif
+http://www.wedologos.com.br:80/2010/index.asp
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1059
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1065
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=109
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1099
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=110
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1105
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=111
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1129
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=114
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=115
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1192
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1210
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1211
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1212
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1216
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1220
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1227
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1230
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1232
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1233
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1234
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1235
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1245
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1246
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1249
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1250
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1251
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1252
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1256
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1257
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1270
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1286
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=131
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=134
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1343
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1353
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1356
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1365
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1377
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=138
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1382
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=139
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=140
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1421
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1444
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1450
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1458
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1462
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1463
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1467
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1468
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1471
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1472
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1474
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1475
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1477
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1479
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=149
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1493
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1499
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1509
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=151
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1514
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1515
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1517
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1519
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1522
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1523
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1524
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1529
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=153
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1533
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1537
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=154
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1540
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1544
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1550
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1551
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1552
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1554
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1559
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1563
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1570
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=158
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=159
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=162
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1624
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1639
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=166
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=1663
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=167
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=174
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=175
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=177
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=182
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=185
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=187
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=195
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=196
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=200
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=207
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=209
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=212
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=216
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=233
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=246
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=249
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=261
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=262
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=265
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=266
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=267
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=274
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=275
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=276
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=277
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=278
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=283
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=294
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=295
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=296
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=297
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=302
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=303
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=305
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=306
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=307
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=308
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=309
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=310
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=312
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=321
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=322
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=329
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=333
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=340
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=347
+http://www.wedologos.com.br:80/2010/ler-briefing.asp?id_projeto=35
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m FETCHING HACKERTARGET URLS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+https://api.whatsapp.com/send/?phone=5521999455646&text&type=phone_number&app_absent=0
+https://api.whatsapp.com/send/?phone=5521970582769&text=Ol%C3%A1%21+Quero+tirar+algumas+d%C3%BAvidas+sobre+o+servi%C3%A7o+de+cria%C3%A7%C3%A3o%21&type=phone_number&app_absent=0
+https://www.wedologos.com.br/criar/marketing/
+https://www.wedologos.com.br/como-funciona.aspx
+https://www.wedologos.com.br/projeto-lista.aspx?modo=concluidos
+https://www.wedologos.com.br/listar-designers.aspx
+https://www.wedologos.com.br/projeto-lista.aspx
+https://www.wedologos.com.br/cadastro.aspx?modo=login
+https://www.wedologos.com.br/cadastro.aspx?modo=login
+https://www.wedologos.com.br/criar/logotipo
+https://www.wedologos.com.br/quem-somos.aspx
+https://www.wedologos.com.br/como-funciona.aspx
+https://www.wedologos.com.br/projeto-lista.aspx
+https://www.wedologos.com.br/conheca-a-wedologos.aspx#5
+https://www.wedologos.com.br/politica-de-privacidade.aspx
+https://www.wedologos.com.br/criar/marketing
+https://www.wedologos.com.br/projeto-lista.aspx?modo=concluidos
+https://braindyclub.com.br/
+https://braindyclub.com.br/gestao-rede
+https://welancer.com/
+https://www.wedologos.com.br/listar-designers.aspx
+https://jivo.chat/13XOrPoQxi
+https://wedologos.helpscoutdocs.com/
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m FETCHING GUA URLS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m RUNNING ACTIVE WEB SPIDER & APPLICATION SCAN [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:20)[0mx•
+[91m
+[91m
+[91m                _.._
+[91m              .'    '.
+[91m             /   __   \ 
+[91m          ,  |   ><   |  ,
+[91m         . \  \      /  / .
+[91m          \_'--`(  )'--'_/
+[91m            .--'/()'--.
+[91m@xer0dayz  /  /` '' `\  \ 
+[91m             |        |
+[91m              \      /
+[91m
+[0m
+[93m + -- --=[ https://sn1persecurity.com[0m
+[93m + -- --=[ blackwidow v1.3 by @xer0dayz [0m
+[0m
+
+yes@wedologos.com.br
++5508008871571
++5530030528
+[91m
+[91m
+[91m                _.._
+[91m              .'    '.
+[91m             /   __   \ 
+[91m          ,  |   ><   |  ,
+[91m         . \  \      /  / .
+[91m          \_'--`(  )'--'_/
+[91m            .--'/()'--.
+[91m@xer0dayz  /  /` '' `\  \ 
+[91m             |        |
+[91m              \      /
+[91m
+[0m
+[93m + -- --=[ https://sn1persecurity.com[0m
+[93m + -- --=[ blackwidow v1.3 by @xer0dayz [0m
+[0m
+[92m[+] URL's Discovered: 
+/usr/share/blackwidow/www.wedologos.com.br_80/www.wedologos.com.br_80-urls-sorted.txt[0m
+[92m__________________________________________________________________________________________________[0m
+[0m
+[92m[+] Dynamic URL's Discovered: 
+/usr/share/blackwidow/www.wedologos.com.br_80/www.wedologos.com.br_80-dynamic-sorted.txt[0m
+[92m__________________________________________________________________________________________________[0m
+[0m
+[92m[+] Form URL's Discovered: 
+/usr/share/blackwidow/www.wedologos.com.br_80/www.wedologos.com.br_80-forms-sorted.txt[0m
+[92m__________________________________________________________________________________________________[0m
+[0m
+[92m[+] Unique Dynamic Parameters Discovered: 
+/usr/share/blackwidow/www.wedologos.com.br_80/www.wedologos.com.br_80-dynamic-unique.txt[0m
+[92m__________________________________________________________________________________________________[0m
+[0m
+[92m[+] Sub-domains Discovered: 
+/usr/share/blackwidow/www.wedologos.com.br_80/www.wedologos.com.br_80-subdomains-sorted.txt[0m
+[92m__________________________________________________________________________________________________[0m
+[0m
+[92m[+] Emails Discovered: 
+/usr/share/blackwidow/www.wedologos.com.br_80/www.wedologos.com.br_80-emails-sorted.txt[0m
+[92m__________________________________________________________________________________________________[0m
+[0m
+[92m[+] Phones Discovered: 
+/usr/share/blackwidow/www.wedologos.com.br_80/www.wedologos.com.br_80-phones-sorted.txt[0m
+[92m__________________________________________________________________________________________________[0m
+[0m
+[91m[+] Loot Saved To: 
+/usr/share/blackwidow/www.wedologos.com.br_80/[0m
+[91m__________________________________________________________________________________________________[0m
+[0m
+[93m      ____        _           __ _  __[0m
+[93m     /  _/___    (_)__  _____/ /| |/ /[0m
+[93m     / // __ \  / / _ \/ ___/ __/   / [0m
+[93m   _/ // / / / / /  __/ /__/ /_/   |  [0m
+[93m  /___/_/ /_/_/ /\___/\___/\__/_/|_|  [0m
+[93m         /_____/                     [0m
+
+[92m--== Inject-X Fuzzer by @xer0dayz ==-- [0m
+[92m   --== https://sn1persecurity.com ==-- [0m
+
+[0m
+[90m>>> [93mhttp://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1013[96m [[91m404[96m] [[90m0[96m][0m
+[90m======================================================================================================[0m
+[95m[F] Received HTTP Status 404 - Page Not Found. Skipping...[0m
+[93m______________________________________________________________________________________________________[0m
+[0m
+[0m
+[93m      ____        _           __ _  __[0m
+[93m     /  _/___    (_)__  _____/ /| |/ /[0m
+[93m     / // __ \  / / _ \/ ___/ __/   / [0m
+[93m   _/ // / / / / /  __/ /__/ /_/   |  [0m
+[93m  /___/_/ /_/_/ /\___/\___/\__/_/|_|  [0m
+[93m         /_____/                     [0m
+
+[92m--== Inject-X Fuzzer by @xer0dayz ==-- [0m
+[92m   --== https://sn1persecurity.com ==-- [0m
+
+[0m
+[90m>>> [93mhttp://www.wedologos.com.bhttps://api.whatsapp.com/send/?phone=5521999455646&text&type=phone_number&app_absent=0[96m [[91m404[96m] [[90m0[96m][0m
+[90m======================================================================================================[0m
+[95m[F] Received HTTP Status 404 - Page Not Found. Skipping...[0m
+[93m______________________________________________________________________________________________________[0m
+[0m
+[0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING INTERESTING EXTENSIONS STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://www.wedologos.com.br/.well-known/ai-plugin.json
+https://www.wedologos.com.br/.well-known/assetlinks.json
+https://www.wedologos.com.br/.well-known/dnt-policy.txt
+https://www.wedologos.com.br/.well-known/gpc.json
+https://www.wedologos.com.br/.well-known/security.txt
+https://www.wedologos.com.br/.well-known/trust.txt
+http://www.wedologos.com.br/2010/img/logos/p/%7B2B75CA3D-819D-4D97-AD65-99AC7B37F963%7D_We.do.logos%202.jpg
+http://www.wedologos.com.br:80/2010/anexos/%7B4C361E39-41E2-4536-ACD0-9095F43BDBB1%7D_PISistema%20e%20Equipamento%20para%20Higieniza%C3%A7%C3%A3o%20de%20Pacientes%20Acamados%20PDF[1].txt
+http://www.wedologos.com.br:80/2010/anexos/%7BEBF386DC-E27C-4398-85B0-43591D316FE8%7D_Apresenta%C3%A7%C3%A3o_Executiva_360o_Graus.pdf
+http://www.wedologos.com.br:80/2010/anexos/%7BEBF386DC-E27C-4398-85B0-43591D316FE8%7D_Apresenta%E7%E3o_Executiva_360o_Graus.pdf
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING INTERESTING PARAMETERS STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=115387
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=120669
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=128726
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=133049
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=1874
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=22430
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=23735
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=25301
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=262488
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING XSS STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://api.whatsapp.com/send/?phone=5521970582769&text=Ol%C3%A1%21+Quero+tirar+algumas+d%C3%BAvidas+sobre+o+servi%C3%A7o+de+cria%C3%A7%C3%A3o%21&type=phone_number&app_absent=0
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=115387
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=120669
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=128726
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=133049
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=1874
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=22430
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=23735
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=25301
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING SSRF STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic
+https://www.wedologos.com.br/cadastro.aspx?modo=login//artigo/importancia-da-logomarca
+https://www.wedologos.com.br/cadastro.aspx?modo=login//criar-sites
+https://www.wedologos.com.br/cadastro.aspx?modo=login//depoimentos.aspx
+https://www.wedologos.com.br/cadastro.aspx?modo=login//portfolio.aspx
+https://www.wedologos.com.br/cadastro.aspx?modo=login//projeto-lista.aspx
+https://www.wedologos.com.br/conheca-a-wedologos.aspx#5//projeto-lista.aspx?modo=concluidos
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx//projeto-lista.aspx?modo=concluidos
+https://www.wedologos.com.br/listar-designers.aspx//artigo/como-criar-logo-para-empresa//projeto-lista.aspx?modo=concluidos
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING REDIRECT STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1013
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1033
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1101
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1206
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1217
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1218
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1313
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1377
+http://www.wedologos.com.br:80/2010/confidencial.asp?id_projeto=1382
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING RCE STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic
+https://www.wedologos.com.br/cadastro.aspx?modo=login
+https://www.wedologos.com.br/cadastro.aspx?modo=login/#
+https://www.wedologos.com.br/cadastro.aspx?modo=login//
+https://www.wedologos.com.br/cadastro.aspx?modo=login//artigo/como-criar-logo-para-empresa
+https://www.wedologos.com.br/cadastro.aspx?modo=login//artigo/como-fazer-um-logotipo
+https://www.wedologos.com.br/cadastro.aspx?modo=login//artigo/importancia-da-logomarca
+https://www.wedologos.com.br/cadastro.aspx?modo=login//br/
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING IDOR STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://api.whatsapp.com/send/?phone=5521970582769&text=Ol%C3%A1%21+Quero+tirar+algumas+d%C3%BAvidas+sobre+o+servi%C3%A7o+de+cria%C3%A7%C3%A3o%21&type=phone_number&app_absent=0
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic
+https://www.wedologos.com.br/cadastro.aspx?modo=login//criar-nomes
+https://www.wedologos.com.br/cadastro.aspx?modo=login//criar/planos/{{prodAovivo.slug}}
+https://www.wedologos.com.br/cadastro.aspx?modo=login//criar/planos/{{prodAovivo.slug}}/aovivo
+https://www.wedologos.com.br/cadastro.aspx?modo=login/javascript:__doPostBack('ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$lkbCadastrarNovo','')
+https://www.wedologos.com.br/cadastro.aspx?modo=login/javascript:void(0);
+https://www.wedologos.com.br/cadastro.aspx?modo=login//politica-de-privacidade.aspx
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING SQL STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://api.whatsapp.com/send/?phone=5521970582769&text=Ol%C3%A1%21+Quero+tirar+algumas+d%C3%BAvidas+sobre+o+servi%C3%A7o+de+cria%C3%A7%C3%A3o%21&type=phone_number&app_absent=0
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic
+https://www.wedologos.com.br/cadastro.aspx?modo=login/javascript:void(0);
+https://www.wedologos.com.br/cadastro.aspx?modo=login//politica-de-privacidade.aspx
+https://www.wedologos.com.br/conheca-a-wedologos.aspx#5//projeto-lista.aspx?modo=concluidos
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=115387
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=120669
+https://www.wedologos.com.br/listar-designers.aspx//ajuda.aspx/../perfil.aspx?uid=128726
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING LFI STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING SSTI STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://api.whatsapp.com/send/?phone=5521970582769&text=Ol%C3%A1%21+Quero+tirar+algumas+d%C3%BAvidas+sobre+o+servi%C3%A7o+de+cria%C3%A7%C3%A3o%21&type=phone_number&app_absent=0
+https://www.facebook.com/dialog/oauth?client_id=288124424547371&redirect_uri=https://www.wedologos.com.br/fb.aspx&scope=email
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic
+https://www.wedologos.com.br/cadastro.aspx?modo=login/javascript:__doPostBack('ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$lkbCadastrarNovo','')
+https://www.wedologos.com.br/cadastro.aspx?modo=login/javascript:__doPostBack('ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$lkbEsqueci','')
+https://www.wedologos.com.br/cadastro.aspx?modo=login/javascript:__doPostBack('ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$lkbLogin','')
+https://www.wedologos.com.br/cadastro.aspx?modo=login/javascript:void(0);
+https://www.wedologos.com.br/cadastro.aspx?modo=login//politica-de-privacidade.aspx
+https://www.wedologos.com.br/conheca-a-wedologos.aspx#5//projeto-lista.aspx?modo=concluidos
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING DEBUG STATIC ANALYSIS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+https://www.wedologos.com.br/%22https://fonts.googleapis.com/css?family=Passion+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Heebo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fira+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Dosis:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Londrina+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nobile:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mada:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oranienbaum:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fredoka+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Prata:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Vidaloka:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cabin+Sketch:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289528
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289575
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289662
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289670
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289743
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289765
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289780
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289829
+https://www.wedologos.com.br/projeto-lista.aspx/postar-logo-upload.aspx?pid=289953
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m DOWNLOADING ALL JAVASCRIPT FILES [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m DISPLAYING ALL JAVASCRIPT COMMENTS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m DISPLAYING ALL JAVASCRIPT LINKS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING LINKFINDER [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m DISPLAYING PATH RELATIVE LINKS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m DISPLAYING JAVASCRIPT URLS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m DISPLAYING JAVASCRIPT DOMAINS [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[91m RUNNING COMMON FILE/DIRECTORY BRUTE FORCE [0m
+[92m====================================================================================[0m•x[92m[2023-07-18](20:25)[0mx•
+[35m[1m
+  _|. _ _  _  _  _ _|_    v0.4.2
+ (_||| _) (/_(_|| (_| )
+[0m
+[33m[1mExtensions: [0m[36m[1mhtm, html, asp, aspx, php, jsp, js[0m[35m[1m | [0m[33m[1mHTTP method: [0m[36m[1mGET[0m[35m[1m | [0m[33m[1mThreads: [0m[36m[1m100[0m[35m[1m | [0m[33m[1mWordlist size: [0m[36m[1m9696[0m
+
+Output File: /usr/share/sniper/loot/workspace/www.wedologos.com.br/web/dirsearch-www.wedologos.com.br.txt
+
+Error Log: /usr/share/sniper/plugins/dirsearch/logs/errors-23-07-18_20-25-10.log
+
+[33m[1mTarget: [0m[36m[1mhttp://www.wedologos.com.br:80/[0m
+
+[33m[1m[20:25:10] Starting: [0m
+[1K[0G[                    ] 0%       1/9696        99/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%       2/9696       100/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%       3/9696       101/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%       4/9696       102/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%       5/9696       102/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%       6/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      10/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      11/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      12/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      13/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      15/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      16/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      17/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[32m[20:25:15] 200 -   43KB - /:15672[0m
+[1K[0G[                    ] 0%      19/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      20/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      21/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      22/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[32m[20:25:16] 200 -   43KB - /*[0m
+[1K[0G[                    ] 0%      24/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      25/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      26/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      27/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      28/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      29/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[32m[20:25:17] 200 -   43KB - /:10250/pods[0m
+[1K[0G[                    ] 0%      31/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      32/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      33/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      34/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[32m[20:25:18] 200 -   43KB - /:15672/api/whoami[0m
+[1K[0G[                    ] 0%      36/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      37/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      38/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      39/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      40/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      41/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      42/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      43/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      44/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      45/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      46/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      47/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      48/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      49/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      50/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      51/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      52/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      53/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      54/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      55/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      56/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      57/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      58/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      59/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      60/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:0[1K[0G[                    ] 0%      61/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      62/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      63/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      65/9696        16/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      66/9696        17/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      67/9696        16/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      68/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      70/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      71/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      72/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      73/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      74/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      77/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      78/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      79/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      80/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      81/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      82/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      83/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      84/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      85/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      86/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      87/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      88/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      89/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      90/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      91/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      92/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      93/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      94/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      95/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 0%      96/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%      97/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%      98/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%      99/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     100/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     101/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     102/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     103/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     104/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     106/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     107/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     108/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     109/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     110/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     105/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     111/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     113/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     112/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     114/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     115/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     116/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     118/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     119/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     120/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     121/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     122/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     123/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     124/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     125/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     126/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     128/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     129/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     127/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     130/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     131/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     132/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:30] 200 -   43KB - /:5601/[0m
+[1K[0G[                    ] 1%     135/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     134/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     136/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     137/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:31] 200 -   43KB - /%3f/[0m
+[1K[0G[                    ] 1%     139/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     140/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     141/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     142/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     143/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     144/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     145/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     146/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     148/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     147/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     149/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     150/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     151/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     152/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     153/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     154/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     155/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:32] 200 -   43KB - /:5601/api/timelion/run[0m
+[32m[20:25:32] 200 -   43KB - /:5601/app/kibana/[0m
+[1K[0G[                    ] 1%     158/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:32] 200 -   43KB - /%61%27%22%3e%3c%69%6e%6a%65%63%74%61%62%6c%65%3e[0m
+[1K[0G[                    ] 1%     160/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     161/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     162/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     163/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     164/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:32] 200 -   43KB - /:7001/_async/AsyncResponseService[0m
+[1K[0G[                    ] 1%     166/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     167/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     168/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     169/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     170/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:33] 200 -   43KB - /:8080/api/jsonws/invoke[0m
+[1K[0G[                    ] 1%     172/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     173/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:33] 200 -   43KB - /:32000/webmail/?color=%22%3E%3Csvg/onload=alert(document.domain)%3E%22[0m
+[1K[0G[                    ] 1%     175/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     176/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     177/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:33] 200 -   43KB - /:8080/dashboard/[0m
+[1K[0G[                    ] 1%     179/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     180/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     181/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:34] 200 -   43KB - /:8123/[0m
+[32m[20:25:34] 200 -   43KB - /:8080/api/jsonws[0m
+[1K[0G[                    ] 1%     184/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:34] 200 -   43KB - /:8080/manager/html[0m
+[32m[20:25:34] 200 -   43KB - /:8090/jolokia/list[0m
+[32m[20:25:34] 200 -   43KB - /:8095/crowd/plugins/servlet/exp?cmd=cat%20/etc/shadow[0m
+[32m[20:25:34] 200 -   43KB - /:8080/jolokia/version[0m
+[32m[20:25:34] 200 -   43KB - /:8090/jolokia[0m
+[32m[20:25:34] 200 -   43KB - /:9090/graph[0m
+[1K[0G[                    ] 1%     191/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     192/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 1%     193/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     194/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:35] 200 -   43KB - /:9200/_cat/indices?v[0m
+[1K[0G[                    ] 2%     196/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:35] 200 -   43KB - /:9200/_all/_search[0m
+[1K[0G[                    ] 2%     198/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     200/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     199/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     201/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     202/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     203/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:36] 200 -   43KB - /:9502/xmlpserver/servlet/adfresource?format=aaaaaaaaaaaaaaa&documentId=..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5CWindows%5Cwin.ini[0m
+[1K[0G[                    ] 2%     205/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     206/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     207/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     208/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     209/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     210/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     211/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     212/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     213/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     214/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     215/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     216/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     217/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     218/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     219/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     220/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     221/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     222/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     223/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     224/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     225/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     226/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     227/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     228/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     229/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     231/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     232/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     233/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     234/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     230/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     235/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     236/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     237/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     238/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     239/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     240/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     241/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     242/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     243/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     244/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     245/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     246/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     247/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     249/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     248/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     250/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     251/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     252/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     253/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     254/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     255/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     256/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     257/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     258/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     259/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     260/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     261/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     262/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     263/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     264/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     265/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     266/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     267/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     268/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     269/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     270/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     271/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     272/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     273/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     274/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     275/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     276/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     277/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     278/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     279/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     280/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     281/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     282/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     283/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     284/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     285/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     286/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     287/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     288/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     289/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 2%     290/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     291/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     292/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     294/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     295/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     296/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     293/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     297/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     298/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     299/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     300/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     301/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     302/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     303/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     304/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     305/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     306/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     307/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     308/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     309/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     310/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     311/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     312/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     313/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     314/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     315/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     316/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     317/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     318/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     319/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     320/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     321/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     322/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     323/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     324/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     325/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     326/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     327/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     328/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     329/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     330/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     331/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     332/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     333/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     334/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     335/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     336/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     337/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     338/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     339/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     340/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     341/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     342/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     343/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     344/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:25:55] 200 -  819KB - /3[0m
+[32m[20:25:55] 200 -  819KB - /2[0m
+[1K[0G[                    ] 3%     347/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     349/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     350/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     348/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     351/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     352/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     353/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     354/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     355/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     356/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     357/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     358/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     359/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     360/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     361/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     362/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     363/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     364/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     365/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     366/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     367/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     368/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     369/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     370/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     371/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     372/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     373/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     374/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     375/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     376/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     378/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     377/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     379/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     380/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     381/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     382/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     383/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     384/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     385/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     386/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 3%     387/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     388/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     389/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     390/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[32m[20:26:00] 200 -  819KB - /?a=/bin/sh+-c+[0m
+[1K[0G[                    ] 4%     392/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     393/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     394/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     395/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     396/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     397/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     398/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     399/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     400/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     401/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     402/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     403/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     404/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     405/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     406/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     407/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     408/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     409/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     410/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     411/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     412/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     413/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     414/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     415/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     416/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     417/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     418/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     419/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     420/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     421/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     422/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     423/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     424/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     425/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     426/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     427/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     428/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     429/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     430/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     431/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     432/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     433/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     434/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     435/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     436/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     437/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     438/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     439/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     440/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     441/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     442/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     443/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     444/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     445/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     446/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     447/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     448/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     449/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     450/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     451/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     452/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     453/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     454/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     455/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     456/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     457/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     458/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     459/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     460/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     461/9696         4/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     462/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     463/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     464/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     465/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     466/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     467/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     468/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     469/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     470/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     471/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     472/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     473/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     474/9696        16/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     475/9696        15/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     476/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     477/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     478/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     479/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     480/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     481/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     482/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     483/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[                    ] 4%     484/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     485/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     486/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     487/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     488/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     489/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     490/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     491/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     492/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     493/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     494/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     496/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     497/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     495/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     498/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     499/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     500/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     501/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     502/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     503/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     504/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     505/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     506/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     507/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     508/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     509/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     510/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     511/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     512/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     513/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     514/9696         2/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     515/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     516/9696         3/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     517/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     518/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     519/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     520/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     521/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     522/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     523/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     524/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     525/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     526/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     527/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     528/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     529/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     530/9696        15/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     531/9696        15/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     532/9696        15/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     533/9696        16/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     534/9696        16/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     535/9696        16/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     536/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     537/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     538/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     539/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     540/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     541/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     542/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     543/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     544/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     545/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     546/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     547/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     548/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     549/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     550/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     551/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     552/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     553/9696         6/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     554/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     555/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     556/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     557/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     558/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     559/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     560/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     561/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     562/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     563/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     564/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     565/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     566/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     567/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     568/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     569/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     570/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     571/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     572/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     573/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     574/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     575/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     576/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     577/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     578/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     579/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     580/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 5%     581/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     582/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     583/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     584/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     585/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     586/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     587/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     588/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     589/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     590/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     591/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     592/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     593/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     594/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     595/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     596/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     597/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     598/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     599/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     600/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     601/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     602/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     603/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     604/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     606/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     605/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     607/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     608/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     609/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     610/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     611/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     612/9696        10/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     613/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     614/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     615/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     616/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     617/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     618/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     619/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     620/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     621/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     622/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     623/9696         7/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     624/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     625/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     626/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     627/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     628/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     629/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     630/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     631/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     632/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     633/9696        14/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     634/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     635/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     636/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     637/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     638/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     639/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     640/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     641/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     642/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     643/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     644/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     645/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     646/9696        13/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     647/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     648/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     649/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     650/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     651/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     652/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     653/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     654/9696        12/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     655/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     656/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     657/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     658/9696         8/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     659/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     660/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     661/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     662/9696         5/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     663/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     664/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     665/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     666/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     667/9696         9/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     668/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     669/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1[1K[0G[[36m[1m#[0m                   ] 6%     670/9696        11/s       [32m[1mjob[0m:1/1  [31m[1merrors[0m:1
