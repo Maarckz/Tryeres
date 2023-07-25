@@ -21,19 +21,18 @@ MMMMMMMMMM               .88\033[m   \033[1;30m __ _  ___ ____ _________/ /_____
  (  V  )  (  V  )             \033[0;31m>DefCyberTool\033[m             \033[7;32m{version}\033[m
 /\033[1;35m--\033[mm\033[1;35m-\033[mm\033[1;35m------\033[mm-m\033[1;35m--\033[m/              
 """
+
 press = '(Pressione qualquer tecla para voltar ao menu inicial)'
 Ctrl_C = 'Você pressionou Ctrl+C para interromper o programa!'
 
 
-
 def remover_arquivos():                             
-    with open("./remove.txt", "r") as f:            ###################################
+    with open("./remover.txt", "r") as f:           ###################################
         lst = f.readlines()                         #  Este trecho do código serve    #
     remove = '\n'                                   #  para apagar cada arquivo       #
-    lst = [l.replace(remove, "") for l in lst]      #  mencionado em um arquivo .txt  #
-    for l in lst:                                   ###################################
-        os.system(f'rm -rf {l}')                    
-
+    lst = [l.replace(remove, "") for l in lst]      #  mencionado em cada linha em    #
+    for l in lst:                                   #  um arquivo .txt                #
+        os.system(f'rm -rf {l}')                    ###################################
 
 
 
@@ -46,10 +45,10 @@ def crawl(url):
         return directories
     return []
 
-def extract_info(url):
+def ext_info(url):
     dynamic_urls = []
     emails = set()
-    phones = set()
+    tel = set()
     forms = []
     subdomains = set()
 
@@ -68,7 +67,7 @@ def extract_info(url):
                 if href.startswith("mailto:"):
                     emails.add(href[7:])
                 elif href.startswith("tel:") or "phone=" in href:
-                    phones.add(href[4:])
+                    tel.add(href[4:])
 
         for form in soup.find_all('form'):
             forms.append(url)
@@ -80,7 +79,7 @@ def extract_info(url):
                 domain = '{uri.netloc}'.format(uri=parsed_uri).split(':')[0]
                 subdomains.add(domain)
 
-    return dynamic_urls, emails, phones, forms, subdomains
+    return dynamic_urls, emails, tel, forms, subdomains
 
 def process_url(url):
     visited_urls = set()
@@ -94,7 +93,7 @@ def process_url(url):
         print(directory)
         print('\033[0;31m============================================================================================>>\033[m',time.strftime("\033[7;32m %H:%M:%S \033[m"))
 
-        dynamic_urls, emails, phones, forms, subdomains = extract_info(directory)
+        dynamic_urls, emails, tel, forms, subdomains = ext_info(directory)
 
         if dynamic_urls:
             print('\nURLs INTERNAS:')
@@ -106,9 +105,9 @@ def process_url(url):
             for email in emails:
                 print(email)
       
-        if phones:
+        if tel:
             print('\nTELEFONES:')
-            for phone in phones:
+            for phone in tel:
                 print(phone)
        
         if forms:
@@ -136,6 +135,7 @@ def links(target):
         url_atual = url_process.pop()
         process_url(url_atual)
 
+###############################################################################################################################################
 
 def recon():
     try:
@@ -169,6 +169,8 @@ def recon():
                 links(target)
     except KeyboardInterrupt:
         print('\n'+Ctrl_C)
+
+###############################################################################################################################################
 
 def install():
     os.system('touch .ok')
@@ -224,4 +226,94 @@ if os.geteuid() == 0:
     menu()
 else:
     print("Execute o SCRIPT como superusuário (root).")
-  
+
+
+'''
+nmap -n -sP www.wedologos.com.br
+nmap -n -v -Pn -sS www.wedologos.com.br | grep "open port"
+nmap -n -v -Pn -sU www.wedologos.com.br | grep "open port" 
+
+whois $TARGET 2> /dev/null | tee $LOOT_DIR/osint/whois-$TARGET.txt 2> /dev/null 
+dig www.wedologos.com.br txt | egrep -i 'spf|DMARC|dkim'
+dig iport._domainkey.www.wedologos.com.br txt txt | egrep -i 'spf|DMARC|DKIM'
+dig _dmarc.${TARGET} txt | egrep -i 'spf|DMARC|DKIM' | tee -a $LOOT_DIR/nmap/email-$TARGET.txt 2>/dev/null
+curl -s https://www.ultratools.com/tools/ipWhoisLookupResult\?ipAddress\=www.wedologos.com.br | grep -A2 label | grep -v input | grep span | cut -d">" -f2 | cut -d"<" -f1 | sed 's/\&nbsp\;//g'
+wget -q http://www.intodns.com/$TARGET -O $LOOT_DIR/osint/intodns-$TARGET.html 2> /dev/null
+
+cp -f /etc/theHarvester/api-keys.yaml ~/api-keys.yaml 2> /dev/null
+cd ~ 2> /dev/null
+theHarvester -d $TARGET -b all 2> /dev/null | tee $LOOT_DIR/osint/theharvester-$TARGET.txt 2> /dev/null 
+
+curl -s https://www.email-format.com/d/$TARGET| grep @$TARGET | grep -v div | sed "s/\t//g" | sed "s/ //g" 2> /dev/null | tee $LOOT_DIR/osint/email-format-$TARGET.txt 2> /dev/null 
+urlcrazy $TARGET 2> /dev/null | tee $LOOT_DIR/osint/urlcrazy-$TARGET.txt 2> /dev/null
+echo -e "$OKBLUE[$RESET${OKRED}i${RESET}$OKBLUE]$OKGREEN metagoofil -d $TARGET -t doc,pdf,xls,csv,txt -l 25 -n 25 -o $LOOT_DIR/osint/ -f $LOOT_DIR/osint/$TARGET.html 2> /dev/null | tee $LOOT_DIR/osint/metagoofil-$TARGET.txt 2> /dev/null
+python metagoofil.py -d $TARGET -t doc,pdf,xls,csv,txt -l 25 -n 25 -o $LOOT_DIR/osint/ -f $LOOT_DIR/osint/$TARGET.html 2> /dev/null | tee $LOOT_DIR/osint/metagoofil-$TARGET.txt 2> /dev/null 
+
+curl --insecure -L -s "https://urlscan.io/api/v1/search/?q=domain:$TARGET" 2> /dev/null | egrep "country|server|domain|ip|asn|$TARGET|prt"| sort -u | tee $LOOT_DIR/osint/urlscanio-$TARGET.txt 2> /dev/null
+h8mail -q domain --target $TARGET -o $LOOT_DIR/osint/h8mail-$TARGET.csv 2> /dev/null
+python3 gitGraber.py -q "\"org:$ORGANIZATION\"" -s 2>&1 | tee $LOOT_DIR/osint/gitGrabber-$ORGANIZATION.txt 2> /dev/null
+goohak $TARGET > /dev/null
+php /usr/share/sniper/bin/inurlbr.php --dork "site:$TARGET" -s inurlbr-$TARGET | tee $LOOT_DIR/osint/inurlbr-$TARGET
+'''
+
+
+'''
+zaproxy
+sublist3r
+davtest
+sqlmap
+GOWITNESS
+findomain
+subfinder
+crlfuzz
+arachni scan
+hakrawler
+
+apt install golang
+apt install -y python3-paramiko
+apt install -y nfs-common
+apt install -y nodejs
+apt install -y wafw00f
+apt install -y xdg-utils
+apt install -y ruby
+apt install -y rubygems
+apt install -y python
+apt install -y dos2unix
+apt install -y aha
+apt install -y libxml2-utils
+apt install -y rpcbind
+apt install -y cutycapt
+apt install -y host
+apt install -y whois
+apt install -y dnsrecon
+apt install -y curl
+apt install -y nmap
+apt install -y php7.4
+apt install -y php7.4-curl
+apt install -y hydra
+apt install -y sqlmap
+apt install -y nbtscan
+apt install -y nikto
+apt install -y whatweb
+apt install -y sslscan
+apt install -y jq
+apt install -y golang
+apt install -y adb
+apt install -y xsltproc
+apt install -y ldapscripts
+apt install -y libssl-dev 2> /dev/null
+apt install -y python-pip 2> /dev/null
+apt purge -y python3-pip
+apt install -y python3-pip
+apt install -y xmlstarlet
+apt install -y net-tools
+apt install -y p7zip-full
+apt install -y jsbeautifier
+apt install -y theharvester 2> /dev/null
+apt install -y phantomjs 2> /dev/null
+apt install -y chromium 2> /dev/null
+apt install -y xvfb
+apt install -y urlcrazy
+apt install -y iputils-ping
+apt install -y enum4linux
+apt install -y dnsutils'''
