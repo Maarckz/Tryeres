@@ -164,10 +164,12 @@ def recon():
                     f'ping -c 1 -t 5 {target}',
                     f'dig {target}',
                     f"sslscan {target}"
-                    f'nmap -Pn -T4 --script vuln {target}',
+                    f'nmap -Pn --script vuln -T4 {target}',
+                    f'nmap -A -T4  {target}',
                     f'whatweb -v {target}',   
                     f'curl -Is {target} && curl -Is http://{target} && curl -Is https://{target}',
-                    f'curl http://{target}/robots.txt && curl https://{target}/robots.txt',
+                    f'curl http://{target}/robots.txt',
+                    f'curl https://{target}/robots.txt',
                     f'wafw00f {target}',
                     f'fierce --domain {domain}',
                     f'dnsrecon -d {domain}'
