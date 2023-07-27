@@ -198,6 +198,7 @@ def install():
                     os.system('''
                     apt update
                     apt-get install whois sslscan nmap whatweb curl wafw00f fierce dnsrecon sqlmap
+                    sudo apt install snapd
                     snap install enum4linux
                     ''')
                     bibliotecas = ['beautifulsoup4', 'requests', 'urllib3']
