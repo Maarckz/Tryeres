@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-version = "v1.1-dev"
+version = "v2.1-dev"
 
 import os
 import time
@@ -58,9 +58,16 @@ def ext_info(url):
 
         for link in soup.find_all('a'):
             href = link.get('href')
-            if href and ("?" in href or "/" in href) or href.startswith('/') or href.startswith('?'):
-                dynamic_urls.append(urljoin(url, href))
-
+            if link is soup.find('id'):
+                print(link)
+            elif link is not None:
+                try:
+                    if href and href.startswith('/') or href.startswith('?'):
+                        dynamic_urls.append(urljoin(url, href))
+                    else:
+                        print(href)
+                except AttributeError as e:
+                    print(link,href,e)
         for link in soup.find_all('a'):
             href = link.get('href')
             if href:
@@ -156,10 +163,16 @@ def recon():
                     f'whois {target}',
                     f'ping -c 1 -t 5 {target}',
                     f'dig {target}',
-                    f'sudo nmap -Pn-T4 {target}',
+                    f"sslscan {target}"
+                    f'nmap -Pn -T4 --script vuln {target}',
+                    f'whatweb -v {target}',   
                     f'curl -Is {target} && curl -Is http://{target} && curl -Is https://{target}',
+                    f'curl http://{target}/robots.txt && curl https://{target}/robots.txt',
                     f'wafw00f {target}',
-                    f'dnsenum {domain} -p 15',
+                    f'fierce --domain {domain}',
+                    f'dnsrecon -d {domain}'
+                    f'enum4linux {target}'
+                    f'sqlmap -u {target} --crawl=2 --batch'
                 )
                 for comando in comandos:
                     print('\n\033[0;31m============================================================================================>>\033[m',time.strftime("\033[7;32m %d/%m/%y \033[m"))
@@ -226,94 +239,3 @@ if os.geteuid() == 0:
     menu()
 else:
     print("Execute o SCRIPT como superusuário (root).")
-
-
-'''
-nmap -n -sP www.wedologos.com.br
-nmap -n -v -Pn -sS www.wedologos.com.br | grep "open port"
-nmap -n -v -Pn -sU www.wedologos.com.br | grep "open port" 
-
-whois $TARGET 2> /dev/null | tee $LOOT_DIR/osint/whois-$TARGET.txt 2> /dev/null 
-dig www.wedologos.com.br txt | egrep -i 'spf|DMARC|dkim'
-dig iport._domainkey.www.wedologos.com.br txt txt | egrep -i 'spf|DMARC|DKIM'
-dig _dmarc.${TARGET} txt | egrep -i 'spf|DMARC|DKIM' | tee -a $LOOT_DIR/nmap/email-$TARGET.txt 2>/dev/null
-curl -s https://www.ultratools.com/tools/ipWhoisLookupResult\?ipAddress\=www.wedologos.com.br | grep -A2 label | grep -v input | grep span | cut -d">" -f2 | cut -d"<" -f1 | sed 's/\&nbsp\;//g'
-wget -q http://www.intodns.com/$TARGET -O $LOOT_DIR/osint/intodns-$TARGET.html 2> /dev/null
-
-cp -f /etc/theHarvester/api-keys.yaml ~/api-keys.yaml 2> /dev/null
-cd ~ 2> /dev/null
-theHarvester -d $TARGET -b all 2> /dev/null | tee $LOOT_DIR/osint/theharvester-$TARGET.txt 2> /dev/null 
-
-curl -s https://www.email-format.com/d/$TARGET| grep @$TARGET | grep -v div | sed "s/\t//g" | sed "s/ //g" 2> /dev/null | tee $LOOT_DIR/osint/email-format-$TARGET.txt 2> /dev/null 
-urlcrazy $TARGET 2> /dev/null | tee $LOOT_DIR/osint/urlcrazy-$TARGET.txt 2> /dev/null
-echo -e "$OKBLUE[$RESET${OKRED}i${RESET}$OKBLUE]$OKGREEN metagoofil -d $TARGET -t doc,pdf,xls,csv,txt -l 25 -n 25 -o $LOOT_DIR/osint/ -f $LOOT_DIR/osint/$TARGET.html 2> /dev/null | tee $LOOT_DIR/osint/metagoofil-$TARGET.txt 2> /dev/null
-python metagoofil.py -d $TARGET -t doc,pdf,xls,csv,txt -l 25 -n 25 -o $LOOT_DIR/osint/ -f $LOOT_DIR/osint/$TARGET.html 2> /dev/null | tee $LOOT_DIR/osint/metagoofil-$TARGET.txt 2> /dev/null 
-
-curl --insecure -L -s "https://urlscan.io/api/v1/search/?q=domain:$TARGET" 2> /dev/null | egrep "country|server|domain|ip|asn|$TARGET|prt"| sort -u | tee $LOOT_DIR/osint/urlscanio-$TARGET.txt 2> /dev/null
-h8mail -q domain --target $TARGET -o $LOOT_DIR/osint/h8mail-$TARGET.csv 2> /dev/null
-python3 gitGraber.py -q "\"org:$ORGANIZATION\"" -s 2>&1 | tee $LOOT_DIR/osint/gitGrabber-$ORGANIZATION.txt 2> /dev/null
-goohak $TARGET > /dev/null
-php /usr/share/sniper/bin/inurlbr.php --dork "site:$TARGET" -s inurlbr-$TARGET | tee $LOOT_DIR/osint/inurlbr-$TARGET
-'''
-
-
-'''
-zaproxy
-sublist3r
-davtest
-sqlmap
-GOWITNESS
-findomain
-subfinder
-crlfuzz
-arachni scan
-hakrawler
-
-apt install golang
-apt install -y python3-paramiko
-apt install -y nfs-common
-apt install -y nodejs
-apt install -y wafw00f
-apt install -y xdg-utils
-apt install -y ruby
-apt install -y rubygems
-apt install -y python
-apt install -y dos2unix
-apt install -y aha
-apt install -y libxml2-utils
-apt install -y rpcbind
-apt install -y cutycapt
-apt install -y host
-apt install -y whois
-apt install -y dnsrecon
-apt install -y curl
-apt install -y nmap
-apt install -y php7.4
-apt install -y php7.4-curl
-apt install -y hydra
-apt install -y sqlmap
-apt install -y nbtscan
-apt install -y nikto
-apt install -y whatweb
-apt install -y sslscan
-apt install -y jq
-apt install -y golang
-apt install -y adb
-apt install -y xsltproc
-apt install -y ldapscripts
-apt install -y libssl-dev 2> /dev/null
-apt install -y python-pip 2> /dev/null
-apt purge -y python3-pip
-apt install -y python3-pip
-apt install -y xmlstarlet
-apt install -y net-tools
-apt install -y p7zip-full
-apt install -y jsbeautifier
-apt install -y theharvester 2> /dev/null
-apt install -y phantomjs 2> /dev/null
-apt install -y chromium 2> /dev/null
-apt install -y xvfb
-apt install -y urlcrazy
-apt install -y iputils-ping
-apt install -y enum4linux
-apt install -y dnsutils'''
