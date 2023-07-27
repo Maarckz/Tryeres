@@ -41,12 +41,12 @@ def crawl(url):
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
         links = soup.find_all('a')
-        directories = {urljoin(url, link['href']) for link in links if 'href' in link.attrs}
-        return directories
+        hrefcode = {urljoin(url, link['href']) for link in links if 'href' in link.attrs}
+        return hrefcode
     return []
 
 def ext_info(url):
-    dynamic_urls = []
+    durls = []
     emails = set()
     tel = set()
     forms = []
@@ -63,7 +63,7 @@ def ext_info(url):
             elif link is not None:
                 try:
                     if href and href.startswith('/') or href.startswith('?'):
-                        dynamic_urls.append(urljoin(url, href))
+                        durls.append(urljoin(url, href))
                     else:
                         print(href)
                 except AttributeError as e:
@@ -86,25 +86,25 @@ def ext_info(url):
                 domain = '{uri.netloc}'.format(uri=parsed_uri).split(':')[0]
                 subdomains.add(domain)
 
-    return dynamic_urls, emails, tel, forms, subdomains
+    return durls, emails, tel, forms, subdomains
 
 def process_url(url):
-    visited_urls = set()
-    if url in visited_urls:
+    visit_urls = set()
+    if url in visit_urls:
         return
-    visited_urls.add(url)
-    directories = crawl(url)
+    visit_urls.add(url)
+    divurls = crawl(url)
     print("\n\nEfetuando WebCrawling em ", url)
-    for directory in sorted(directories):
+    for divurl in sorted(divurls):
         print('\n\033[0;31m============================================================================================>>\033[m',time.strftime("\033[7;32m %d/%m/%y \033[m"))
-        print(directory)
+        print(divurl)
         print('\033[0;31m============================================================================================>>\033[m',time.strftime("\033[7;32m %H:%M:%S \033[m"))
 
-        dynamic_urls, emails, tel, forms, subdomains = ext_info(directory)
+        durls, emails, tel, forms, subdomains = ext_info(divurl)
 
-        if dynamic_urls:
+        if durls:
             print('\nURLs INTERNAS:')
-            for url in dynamic_urls:
+            for url in durls:
                 print(url)
      
         if emails:
