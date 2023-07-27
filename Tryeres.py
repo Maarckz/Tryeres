@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-version = "v2.2-dev"
+version = "v2.1-dev"
 
 import os
 import time
@@ -200,6 +200,12 @@ def install():
                     apt-get install whois sslscan nmap whatweb curl wafw00f fierce dnsrecon sqlmap
                     snap install enum4linux
                     ''')
+                    bibliotecas = ['beautifulsoup4', 'requests', 'urllib3']
+                    for biblioteca in bibliotecas:
+                        try:
+                            os.system(f'pip3 install {biblioteca}')
+                        except Exception as e:
+                            print(f"Erro ao instalar {biblioteca}: {e}")
                     os.system('echo "ok" > .ok')
                 except Exception as e:
                     print(f"Erro durante a atualização: {str(e)}")
