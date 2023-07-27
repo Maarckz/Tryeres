@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-version = "v2.1-dev"
+version = "v2.2-dev"
 
 import os
 import time
@@ -197,6 +197,8 @@ def install():
                 try:
                     os.system('''
                     apt update
+                    apt-get install whois sslscan nmap whatweb curl wafw00f fierce dnsrecon sqlmap
+                    snap install enum4linux
                     ''')
                     os.system('echo "ok" > .ok')
                 except Exception as e:
@@ -213,7 +215,8 @@ def menu():
     print(banner)
     print('''MENU:\n
 [1] - Vamos lá!
-[2] - Status
+[2] - Instalar (Dependencias)
+[3] - Status
 [0] - Exit
 ''')
     try:    
@@ -222,6 +225,8 @@ def menu():
         if op == 1:
             recon()
         elif op == 2:
+            install()
+        elif op == 3:
             status()
         elif op == 0:
             print('Volte sempre! ¯\_(ツ)_/¯')
@@ -241,3 +246,4 @@ if os.geteuid() == 0:
     menu()
 else:
     print("Execute o SCRIPT como superusuário (root).")
+
