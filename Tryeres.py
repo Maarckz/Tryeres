@@ -33,8 +33,6 @@ def remover_arquivos():
     for l in lst:                                   #  um arquivo .txt                #
         os.system(f'rm -rf {l}')                    ###################################
 
-
-
 def crawl(url):
     response = requests.get(url)
     if response.status_code == 200:
