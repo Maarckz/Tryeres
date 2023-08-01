@@ -130,7 +130,6 @@ def process_url(url):
             print('\nURLs INTERNAS:')
             for url in durls:
                 print(url)
-                # Chamada recursiva para o novo link encontrado
                 
 def links(target):
     url_process = ['http://' + target]
