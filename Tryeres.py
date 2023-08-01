@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-version = "v2.1-dev"
+version = "v2.12-dev"
 
 import os
 import time
@@ -24,7 +24,6 @@ MMMMMMMMMM               .88\033[m   \033[1;30m __ _  ___ ____ _________/ /_____
 
 press = '(Pressione qualquer tecla para voltar ao menu inicial)'
 Ctrl_C = 'Você pressionou Ctrl+C para interromper o programa!'
-
 
 def remover_arquivos():                             
     with open("./remover.txt", "r") as f:           ###################################
@@ -106,7 +105,10 @@ def process_url(url):
             print('\nURLs INTERNAS:')
             for url in durls:
                 print(url)
-     
+                try:
+                    links(url)
+                except requests.exceptions.ConnectionError as err:
+                    pass
         if emails:
             print('\nEMAILS:')
             for email in emails:
@@ -126,11 +128,19 @@ def process_url(url):
             print('\nSITES:')
             for subdomain in subdomains:
                 print(subdomain)
-
+        if durls:
+            print('\nURLs INTERNAS:')
+            for url in durls:
+                print(url)
+                # Chamada recursiva para o novo link encontrado
+                
 def links(target):
     url_process = ['http://' + target]
-    sit = 'n'#input('Deseja salvar e não exibir o WebCrawl? (S/N) ')
+    sit = input('\nDeseja salvar qo WebCrawl? (S/N) ')
     if(sit.lower() == 's'):
+        url_atual = url_process.pop()
+        process_url(url_atual)
+        print('Aguarde enquanto o arquivo está sendo salvo ...')
         with open('craw.txt', 'w') as f:
             while url_process:
                 url_atual = url_process.pop()
@@ -141,8 +151,6 @@ def links(target):
     else:
         url_atual = url_process.pop()
         process_url(url_atual)
-
-###############################################################################################################################################
 
 def recon():
     try:
@@ -163,29 +171,28 @@ def recon():
                     f'whois {target}',
                     f'ping -c 1 -t 5 {target}',
                     f'dig {target}',
-                    f"sslscan {target}"
+                    f'sslscan {target}',
                     f'nmap -Pn --script vuln -T4 {target}',
-                    f'nmap -A -T4  {target}',
+                    f'nmap -A -T4 {target}',
                     f'whatweb -v {target}',   
                     f'curl -Is {target} && curl -Is http://{target} && curl -Is https://{target}',
                     f'curl http://{target}/robots.txt',
                     f'curl https://{target}/robots.txt',
                     f'wafw00f {target}',
                     f'fierce --domain {domain}',
-                    f'dnsrecon -d {domain}'
-                    f'enum4linux {target}'
-                    f'sqlmap -u {target} --crawl=2 --batch'
+                    f'dnsrecon -d {domain}',
+                    f'enum4linux {target}',
+                    f'sqlmap -u {target} --crawl=2 --batch',
                 )
                 for comando in comandos:
                     print('\n\033[0;31m============================================================================================>>\033[m',time.strftime("\033[7;32m %d/%m/%y \033[m"))
+                    print(comando)
                     print('\033[0;31m============================================================================================>>\033[m',time.strftime("\033[7;32m %H:%M:%S \033[m"))
                     os.system(comando) 
                 
                 links(target)
     except KeyboardInterrupt:
         print('\n'+Ctrl_C)
-
-###############################################################################################################################################
 
 def install():
     os.system('touch .ok')
@@ -197,7 +204,7 @@ def install():
                 try:
                     os.system('''
                     apt update
-                    apt-get install whois sslscan nmap whatweb curl wafw00f fierce dnsrecon sqlmap
+                    apt-get install python3 python3-pip whois sslscan nmap whatweb curl wafw00f fierce dnsrecon sqlmap
                     sudo apt install snapd
                     snap install enum4linux
                     ''')
@@ -207,7 +214,8 @@ def install():
                             os.system(f'pip3 install {biblioteca}')
                         except Exception as e:
                             print(f"Erro ao instalar {biblioteca}: {e}")
-                    os.system('echo "ok" > .ok')
+                    with open('.ok', 'w') as f:
+                        f.write("ok")
                 except Exception as e:
                     print(f"Erro durante a atualização: {str(e)}")
         else:
