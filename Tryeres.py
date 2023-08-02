@@ -33,6 +33,8 @@ def remover_arquivos():
     for l in lst:                                   #  um arquivo .txt                #
         os.system(f'rm -rf {l}')                    ###################################
 
+
+
 def crawl(url):
     response = requests.get(url)
     if response.status_code == 200:
@@ -130,6 +132,7 @@ def process_url(url):
             print('\nURLs INTERNAS:')
             for url in durls:
                 print(url)
+                # Chamada recursiva para o novo link encontrado
                 
 def links(target):
     url_process = ['http://' + target]
@@ -179,7 +182,6 @@ def recon():
                     f'fierce --domain {domain}',
                     f'dnsrecon -d {domain}',
                     f'enum4linux {target}',
-                    f'sqlmap -u {target} --crawl=2 --batch',
                 )
                 for comando in comandos:
                     print('\n\033[0;31m============================================================================================>>\033[m',time.strftime("\033[7;32m %d/%m/%y \033[m"))
@@ -188,6 +190,7 @@ def recon():
                     os.system(comando) 
                 
                 links(target)
+                os.system('sqlmap -u {target} --crawl=2 --batch')
     except KeyboardInterrupt:
         print('\n'+Ctrl_C)
 
