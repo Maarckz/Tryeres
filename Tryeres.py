@@ -136,6 +136,9 @@ def process_url(url):
                 
 def links(target):
     url_process = ['http://' + target]
+    url_atual = url_process.pop()
+    process_url(url_atual)
+    
     sit = input('\nDeseja salvar qo WebCrawl? (S/N) ')
     if(sit.lower() == 's'):
         url_atual = url_process.pop()
@@ -148,9 +151,6 @@ def links(target):
                 process_url(url_atual)
                 os.dup2(os.dup(2), 1) 
         print("WebCrawler salvo com sucesso!")
-    else:
-        url_atual = url_process.pop()
-        process_url(url_atual)
 
 def recon():
     try:
@@ -172,7 +172,7 @@ def recon():
                     f'ping -c 1 -t 5 {target}',
                     f'dig {target}',
                     f'sslscan {target}',
-                    #f'nmap -Pn --script vuln -T4 {target}',
+                    f'nmap -Pn --script vuln -T4 {target}',
                     f'nmap -A -T4 {target}',
                     f'whatweb -v {target}',   
                     f'curl -Is {target} && curl -Is http://{target} && curl -Is https://{target}',
