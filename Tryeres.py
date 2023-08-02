@@ -141,8 +141,6 @@ def links(target):
     
     sit = input('\nDeseja salvar qo WebCrawl? (S/N) ')
     if(sit.lower() == 's'):
-        url_atual = url_process.pop()
-        process_url(url_atual)
         print('Aguarde enquanto o arquivo está sendo salvo ...')
         with open('craw.txt', 'w') as f:
             while url_process:
