@@ -230,14 +230,16 @@ def menu():
     print(banner)
     print('''MENU:\n
 [1] - Vamos lá!
-[2] - Instalar (Dependencias)
-[3] - Status
+[2] - Status
 [0] - Exit
 ''')
     try:    
         op = int(input('Escolha uma opção: '))
     
         if op == 1:
+            install()
+            os.system('clear')
+            print(banner)
             recon()
         elif op == 2:
             install()
