@@ -172,7 +172,7 @@ def recon():
                     f'ping -c 1 -t 5 {target}',
                     f'dig {target}',
                     f'sslscan {target}',
-                    f'nmap -Pn --script vuln -T4 {target}',
+                    #f'nmap -Pn --script vuln -T4 {target}',
                     f'nmap -A -T4 {target}',
                     f'whatweb -v {target}',   
                     f'curl -Is {target} && curl -Is http://{target} && curl -Is https://{target}',
