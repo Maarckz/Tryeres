@@ -188,7 +188,7 @@ def recon():
                     os.system(comando) 
                 
                 links(target)
-                os.system('sqlmap -u {target} --crawl=2 --batch')
+                os.system(f'sqlmap -u {target} --crawl=2 --batch')
     except KeyboardInterrupt:
         print('\n'+Ctrl_C)
 
